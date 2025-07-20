@@ -1,4 +1,0 @@
-{"message_id":"","path":["172.30.1.29:9002","172.30.1.29:9003"],"payload":"Hello through B to C!","timestamp":"2025-07-17T23:03:02+09:00"}
-{"message_id":"","path":["172.30.1.29:9002","172.30.1.29:9003"],"payload":"Hello through B to C!","timestamp":"2025-07-17T23:03:19+09:00"}
-{"message_id":"b5b1a347-3174-4064-b618-70a7a249242e","path":["172.30.1.29:9002","172.30.1.29:9003"],"payload":"Hello with UUID","timestamp":"2025-07-17T23:04:59+09:00"}
-{"message_id":"3a7c73de-9d98-4760-9a94-7089315e18eb","path":["172.30.1.29:9002","172.30.1.29:9003"],"payload":"Hello with UUID","timestamp":"2025-07-17T23:11:10+09:00"}
