@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"starmesh/app/node"
 	"starmesh/common/model"
+	"starmesh/common/util"
 )
 
 func main() {
@@ -22,6 +24,13 @@ func main() {
 		Peers: make(map[string]model.Peer),
 	}
 
+	lat, lon, err := util.GetGeoLocation()
+	if err != nil {
+		fmt.Println("⚠️  위도/경도 조회 실패:", err)
+		lat, lon = 0.0, 0.0
+	}
+
+	node.Bootstrap("http://localhost:8080", lat, lon)
 	go node.StartServer()
 	node.StartGossipLoop()
 	node.StartPeerCleanupLoop()
